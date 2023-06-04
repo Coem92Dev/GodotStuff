@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://3dPersonCamera/camPivot.gd" id="1_qorx2"]
+
+[node name="camPivot" type="Node3D" node_paths=PackedStringArray("target")]
+script = ExtResource("1_qorx2")
+target = NodePath("../Character")
+
+[node name="camPivot2" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="camPivot2"]
+transform = Transform3D(0.999913, -0.00919914, 0.00948318, 0.0035185, 0.877264, 0.479995, -0.0127348, -0.47992, 0.87722, 0, 2.698, 7.241)
+fov = 80.0
